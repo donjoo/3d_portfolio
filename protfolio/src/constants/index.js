@@ -4,7 +4,6 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -14,15 +13,14 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    brototype,
+    freelance,
+    self_project,
+    self_study,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +44,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
@@ -54,7 +52,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Linkdln content Creator",
       icon: creator,
     },
   ];
@@ -72,10 +70,7 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    
     {
       name: "React JS",
       icon: reactjs,
@@ -88,10 +83,10 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
     {
       name: "MongoDB",
       icon: mongodb,
@@ -108,65 +103,65 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    
   ];
   
   const experiences = [
     {
+      title: "Python Django Developer",
+      company_name: "Brototype",
+      icon: brototype,
+      iconBg: "#004080",
+      date: "August 2023 - Present",
+      points: [
+        "Developing and maintaining web applications using Django and React.js, implementing secure JWT authentication and authorization.",
+        "Collaborating with cross-functional teams, including designers, project managers, and backend developers, to ensure high-quality user experiences.",
+        "Building RESTful APIs and integrating frontend components with Redux for efficient state management.",
+        "Participating in weekly feedback sessions, providing insights into team projects, and addressing technical challenges.",
+        "Conducting code reviews and mentoring junior developers on best practices for clean and efficient code.",
+      ],
+    },
+    {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      company_name: "Freelance",
+      icon: freelance,
+      iconBg: "#333333",
+      date: "September 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Creating and enhancing interactive user interfaces for various applications, utilizing React, Redux, and Firebase for authentication and data management.",
+        "Implemented responsive design, ensuring compatibility across different devices and browsers.",
+        "Developed features like user authentication, wishlist functionality, and a user profile with data updates and image uploads.",
+        "Actively experimenting with new features and sharing code in the 'Chai with Code' series on LinkedIn, fostering a community of learning.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Data Analyst (Python Developer)",
+      company_name: "Self-Project",
+      icon: self_project,
+      iconBg: "#006600",
+      date: "June 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Designed and implemented Python scripts for data extraction and analysis, automating the transformation of raw data into structured formats like CSV and Excel.",
+        "Utilized libraries such as Pandas and OpenPyXL to streamline data processing and cleaning.",
+        "Posted and shared knowledge on LinkedIn as part of the 'Chai with Code' series, focusing on data analysis techniques and best practices.",
+        "Worked with APIs to pull data from various sources and integrated output into structured, user-friendly reports.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Full-Stack Develope",
+      company_name: "Self-Study",
+      icon: self_study,
+      iconBg: "#660099",
+      date: "May 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Engaged in comprehensive learning of web development, including HTML, CSS, JavaScript, SQL, and ORM.",
+        "Developed a Ecommerce platform as part of hands-on projects, gaining practical experience Django.",
+        "Strengthened understanding of relational databases using PostgreSQL and Django ORM for backend data handling.",
+        "Enhanced proficiency in Python, Django, and React through structured self-study and weekly goals.",
+        "Consistently worked on self-projects to reinforce coding skills and explored different frameworks and libraries.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
@@ -198,68 +193,90 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "User Management System",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application for managing user profiles, including registration, login, and user data updates. It features secure JWT authentication and role-based authorization for admin and regular users.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "redux",
+          color: "purple-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "django",
+          color: "green-text-gradient",
         },
       ],
-      image: carrent,
+      image: userManagementSystem,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Data Extraction & Analysis Tool",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Python-based tool to extract data from multiple sources, process it, and save it in structured formats like CSV and Excel. Built to automate data gathering and reporting tasks efficiently.",
+      tags: [
+        {
+          name: "python",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "pandas",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "openpyxl",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: dataExtractionTool,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Netflix Clone",
+      description:
+        "A Netflix-inspired web app that allows users to browse movies and TV shows with an interactive interface. Built to strengthen understanding of state management and API integration.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "redux",
+          color: "purple-text-gradient",
         },
         {
-          name: "scss",
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: netflixClone,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Chai with Code Series",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A LinkedIn content series where various coding concepts like data extraction, text analysis, and web scraping are explored through fun and educational Python scripts.",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
+          name: "python",
+          color: "yellow-text-gradient",
         },
         {
-          name: "supabase",
+          name: "web scraping",
           color: "green-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "data analysis",
+          color: "blue-text-gradient",
         },
       ],
-      image: tripguide,
+      image: chaiWithCodeSeries,
       source_code_link: "https://github.com/",
     },
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects };
