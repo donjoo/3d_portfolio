@@ -13,14 +13,16 @@ import {
     mongodb,
     git,
     figma,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     brototype,
     freelance,
     self_project,
     self_study,
+    ecomerce,
+    dataextraction,
+    netflix,
+    usermanagement,
+    chaiwithcode,
   } from "../assets";
   
   export const navLinks = [
@@ -193,6 +195,28 @@ import {
   
   const projects = [
     {
+      name: "E-commerce Platform",
+      description:
+        "A full-featured e-commerce platform that allows users to browse t-shirts, add items to the cart, and make secure online purchases. Includes product management, user accounts, and order management.",
+      tags: [
+        {
+          name: "django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        { 
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image:  ecomerce,
+      source_code_link: "https://github.com/donjoo/1stproject.git",
+    },
+  
+    {
       name: "User Management System",
       description:
         "Web application for managing user profiles, including registration, login, and user data updates. It features secure JWT authentication and role-based authorization for admin and regular users.",
@@ -210,8 +234,8 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: userManagementSystem,
-      source_code_link: "https://github.com/",
+      image: usermanagement,
+      source_code_link: "https://github.com/donjoo/UserManagement_App.git",
     },
     {
       name: "Data Extraction & Analysis Tool",
@@ -223,7 +247,7 @@ import {
           color: "yellow-text-gradient",
         },
         {
-          name: "pandas",
+          name: "beautifullsoup",
           color: "blue-text-gradient",
         },
         {
@@ -231,13 +255,13 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: dataExtractionTool,
-      source_code_link: "https://github.com/",
+      image: dataextraction,
+      source_code_link: "https://github.com/donjoo/Chai-with-Code.git",
     },
     {
       name: "Netflix Clone",
       description:
-        "A Netflix-inspired web app that allows users to browse movies and TV shows with an interactive interface. Built to strengthen understanding of state management and API integration.",
+        "A Netflix-clone. Built to strengthen understanding of state management and API integration.",
       tags: [
         {
           name: "react",
@@ -252,8 +276,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: netflixClone,
-      source_code_link: "https://github.com/",
+      image: netflix,
+      source_code_link: "https://github.com/donjoo/Netflix_clone.git",
     },
     {
       name: "Chai with Code Series",
@@ -273,8 +297,8 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: chaiWithCodeSeries,
-      source_code_link: "https://github.com/",
+      image: chaiwithcode,
+      source_code_link: "https://github.com/donjoo/Chai-with-Code.git",
     },
   ];
   

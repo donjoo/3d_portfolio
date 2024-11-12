@@ -25,12 +25,18 @@ import freelance from "./company/freelance.png";
 import self_project from "./company/self_project.jpeg";
 import self_study from "./company/self_study.jpeg";
 import brototype from "./company/brototype_logo.png"
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+;
+import chaiwithcode from "./chaiwithcode.jpeg";
+import ecomerce from './ecommerce_platform.jpeg';
+import dataextraction from './data-extraction.jpg';
+import netflix from './netflix.jpeg';
+import usermanagement from './usermanagement.png'
 
 export {
+  ecomerce,
+  dataextraction,
+  netflix,
+  usermanagement,
   freelance,
   self_project,
   self_study,
@@ -56,7 +62,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
+  chaiwithcode,
+
 };
